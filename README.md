@@ -15,15 +15,9 @@
 - [依赖注入](https://github.com/seven654321/blog/issues/1)    
 
 
-<<<<<<< HEAD
 > <b>JS</b>
 - [浅谈__proto__、instanceof](https://github.com/seven654321/blog/issues/1)    
- - [判断数据类型](https://github.com/seven654321/blog/issues/1)     
-=======
-> <b>JS</b>
-
-- [判断数据类型](https://github.com/seven654321/blog/issues/1)    
->>>>>>> 662dbdafdcedae3c8e41f0d9874bac2531675bd0
+- [判断数据类型](https://github.com/seven654321/blog/issues/1)     
 - [浅拷贝深拷贝](https://github.com/seven654321/blog/issues/1)   
 - [面向对象](https://github.com/seven654321/blog/issues/1)    
 - [数组去重、打乱](https://github.com/seven654321/blog/issues/1)    
