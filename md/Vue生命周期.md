@@ -14,7 +14,7 @@
     callHook(vm, 'created')
     initRender(vm)
 ```
-initLifecycle主要功能是为了初始化一些数据比如_watcher,$parent等
+> &emsp;initLifecycle主要功能是为了初始化一些数据比如_watcher,$parent等
 
 ```
   vm.$parent = parent
@@ -29,18 +29,18 @@ initLifecycle主要功能是为了初始化一些数据比如_watcher,$parent�
   vm._isDestroyed = false
   vm._isBeingDestroyed = false
 ```
-initEvents主要是调用 _updateListeners更新父元素的监听,在此之后可以调用
+> &emsp;initEvents主要是调用 _updateListeners更新父元素的监听,在此之后可以调用
 $emit触发事件;
 ```
-const listeners = vm.$options._parentListeners
-const on = bind(vm.$on, vm)
-const off = bind(vm.$off, vm)
-vm._updateListeners = (listeners, oldListeners) => {
-updateListeners(listeners, oldListeners || {}, on, off)
-}
-if (listeners) {
-vm._updateListeners(listeners)
-}
+    const listeners = vm.$options._parentListeners
+    const on = bind(vm.$on, vm)
+    const off = bind(vm.$off, vm)
+    vm._updateListeners = (listeners, oldListeners) => {
+        updateListeners(listeners, oldListeners || {}, on, off)
+    }
+    if (listeners) {
+        vm._updateListeners(listeners)
+    }
 ```
 
 ```
